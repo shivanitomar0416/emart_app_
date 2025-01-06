@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
+
+import 'package:velocity_x/velocity_x.dart';
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -16,21 +18,14 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Vx.orange300,
      body: Center (
-      child: Container(
-        height: 120,
-        width: 120,
-        decoration: BoxDecoration(
-          boxShadow:[
-            BoxShadow(blurRadius: 10, color: const Color.fromARGB(255, 235, 168, 168), spreadRadius:5.0 )
-          ],
-          image: DecorationImage(
-              image: AssetImage("assets/logo.jpeg"),
-              fit: BoxFit.cover, 
-            ),
+      child: Column(
+        children: [
+            Align(alignment: Alignment.topLeft, child: Image.asset(icSplashBg, width:300))
+        ],
             ),
         ),
-      ),
     );
   }
 }

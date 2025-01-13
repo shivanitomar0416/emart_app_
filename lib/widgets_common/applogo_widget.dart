@@ -1,4 +1,4 @@
-/*
+
 import 'package:emart_app_/consts/consts.dart';
 Widget applogoWidget() {
   return Image.asset(icAppLogo)
@@ -9,4 +9,3 @@ Widget applogoWidget() {
       .rounded
       .make();
 }
-*/

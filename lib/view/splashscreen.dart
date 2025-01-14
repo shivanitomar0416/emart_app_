@@ -14,7 +14,7 @@ class _SplashScreenState extends State<SplashScreen> {
      body: Center (
       child: Column(
         children: [
-          /*  Align(alignment: Alignment.topLeft, child: Image.asset(icSplashBg, width: 300,)),*/
+            Align(alignment: Alignment.topLeft, child: Image.asset(icSplashBg, width: 300,)),
         ],
             ),
         ),
